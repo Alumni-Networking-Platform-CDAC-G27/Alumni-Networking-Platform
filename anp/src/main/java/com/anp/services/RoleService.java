@@ -1,4 +1,9 @@
 package com.anp.services;
 
-public class RoleService {
+import com.anp.domain.entities.UserRole;
+
+public interface RoleService {
+    boolean persist(UserRole role) throws Exception;
+
+    UserRole getByName(String name);
 }
