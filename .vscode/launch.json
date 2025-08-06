@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-AnpApplication<anp>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.anp.AnpApplication",
+            "projectName": "anp",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
