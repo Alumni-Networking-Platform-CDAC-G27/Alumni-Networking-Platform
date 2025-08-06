@@ -9,6 +9,16 @@
             "projectName": "anp",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SocialNetworkApplication<alumni-networking-platform>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.anp.SocialNetworkApplication",
+            "projectName": "alumni-networking-platform",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
