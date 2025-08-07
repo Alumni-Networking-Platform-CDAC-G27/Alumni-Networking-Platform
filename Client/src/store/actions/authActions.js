@@ -63,6 +63,7 @@ function loginAction(username, password) {
     return (dispatch) => {
         dispatch(ajaxBegin());
         return requester.post('/login', { username, password }, (response) => {
+            //console.log("asddsfasdfasdfasdf",response);
             if (response.error) {
                 dispatch(loginError(' Incorrect credentials!'));
             } else {
