@@ -1,20 +1,17 @@
 package com.anp.servicesImpl;
 
-import static com.anp.utils.constants.ResponseMessageConstants.SERVER_ERROR_MESSAGE;
-
 import java.io.File;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.cloudinary.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.anp.services.CloudinaryService;
+import static com.anp.utils.constants.ResponseMessageConstants.SERVER_ERROR_MESSAGE;
 import com.anp.validations.serviceValidation.services.CloudinaryValidationService;
-import com.cloudinary.Api;
 import com.cloudinary.Cloudinary;
 
 @Service
