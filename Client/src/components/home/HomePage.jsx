@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { ToastComponent } from '../common';
 import { userService } from '../../infrastructure/';
-import { css } from '@emotion/react';
+import { css } from '@emotion/core';
 import { CircleLoader } from 'react-spinners';
 
 import TimeLine from './TimeLine';
@@ -141,7 +141,7 @@ class HomePage extends Component {
                                 {loggedIn && (isRoot || isAdmin || isTheCurrentLoggedInUser) && <Route exact path="/home/users/edit/:id" component={UserEditPage} />}
                                 {(loggedIn && (isRoot || isAdmin)) && <Route exact path="/home/users/all/:id" component={UserAllPage} />}
                                 {(loggedIn && isRoot) && <Route exact path="/home/users/delete/:id" component={UserDeletePage} />}
-                                {loggedIn && <Route exact path="/home/gallery/:id" component={UserGalleryPage} />}
+                                {loggedIn && <Route exact path="/home/gallery/:id" component={UserGalleryPage} />} />}
                                 {(loggedIn && (isRoot || isAdmin)) && <Route exact path="/home/logs/:id" component={UserLogsPage} />}
                                 {loggedIn && <Route exact path="/home/friends/:id" component={UserFriendsAllPage} />}
                                 {loggedIn && <Route exact path="/home/findFriends/:id" component={UserFindFriendsPage} />}

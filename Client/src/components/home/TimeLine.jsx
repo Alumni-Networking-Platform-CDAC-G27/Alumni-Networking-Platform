@@ -21,7 +21,7 @@ const TimeLine = (props) => {
                     <li>
                         <NavLink className="friends " exact to={`/home/friends/${props.id}`}>
                             <i className="fas fa-user-friends"></i>
-                            <div>FRIENDS</div>
+                            <div>CONNECTIONS</div>
                         </NavLink>
                     </li>
                     <li>

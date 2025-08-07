@@ -123,7 +123,7 @@ class UserFriendRequestsPage extends Component {
         if (!requests) {
             requests = (
                 <Fragment>
-                    <h2>There are no friend requests!</h2>
+                    <h2>There are no Conneciton requests!</h2>
                     <div className="hr-styles"></div>
                 </Fragment>)
         }
@@ -134,7 +134,7 @@ class UserFriendRequestsPage extends Component {
                     <section className="friend-content-section">
                         <div className="container col-md-12 text-center mb-5">
                             <h1 className="text-center font-weight-bold mt-4" style={{ 'margin': '1rem auto' }}>
-                                Friend Requests
+                                Connection Requests
                             </h1>
                             <div className="hr-styles"></div>
                             <section className="friend-section" >

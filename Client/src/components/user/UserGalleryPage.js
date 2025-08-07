@@ -5,8 +5,7 @@ import { ToastComponent } from '../common'
 import Picture from './Picture';
 import './css/UserGallery.css';
 
-// import { css } from '@emotion/core';
-import { css } from '@emotion/react'
+import { css } from '@emotion/core';
 import { RingLoader, GridLoader, MoonLoader, CircleLoader } from 'react-spinners';
 
 import { connect } from 'react-redux';

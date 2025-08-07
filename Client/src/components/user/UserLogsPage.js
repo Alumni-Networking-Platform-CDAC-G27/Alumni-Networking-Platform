@@ -4,7 +4,7 @@ import { userService } from '../../infrastructure';
 import { toast } from 'react-toastify';
 import { ToastComponent } from '../common';
 import './css/UserLogsPage.css';
-import { css } from '@emotion/react';
+import { css } from '@emotion/core';
 import { CircleLoader } from 'react-spinners';
 
 import { connect } from 'react-redux';

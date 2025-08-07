@@ -3,7 +3,7 @@ import '../../styles/FormPages.css'
 import { toast } from 'react-toastify';
 import { ToastComponent } from '../common';
 import placeholder_user_image from '../../assets/images/placeholder.png';
-import defaultImage from '../../assets/images/A-Business-Leaders-Guide-to-Digital-Platforms_Header-0225-1536x638.webp';
+import default_background_image from '../../assets/images/default-background-image.jpg';
 import { connect } from 'react-redux';
 import { registerAction, redirectAction } from '../../store/actions/authActions'
 
@@ -21,7 +21,7 @@ class RegisterPage extends Component {
             address: '',
             city: '',
             profilePicUrl: placeholder_user_image,
-            backgroundImageUrl: defaultImage,
+            backgroundImageUrl: default_background_image,
             touched: {
                 username: false,
                 email: false,
@@ -121,30 +121,32 @@ class RegisterPage extends Component {
                         <h1 className="text-center font-weight-bold mt-4" style={{ 'margin': '1rem auto', 'paddingTop': '2rem' }}>Register</h1>
                         <div className="hr-styles" style={{ 'width': '70%' }}></div>
 
-                        <form className="Register-form-container" onSubmit={this.onSubmitHandler}>
+                       <form className="Register-form-container" onSubmit={this.onSubmitHandler}>
 
-                            <div className="section-container">
-                                <section className="left-section">
-                                    <div className="form-group">
-                                        <label htmlFor="username" >Username</label>
-                                        <input
-                                            type="text"
-                                            className={"form-control " + (shouldMarkError('username') ? "error" : "")}
-                                            id="username"
-                                            name="username"
-                                            value={this.state.username}
-                                            onChange={this.onChangeHandler}
-                                            onBlur={this.handleBlur('username')}
-                                            aria-describedby="usernameHelp"
-                                            placeholder="Enter username"
-                                        />
+                        <div className="section-container">
+                            <section className="left-section">
+                                <div className="form-group">
+                                    <label htmlFor="username" >Username</label>
+                                    <input
+                                        type="text"
+                                        tabIndex={1}
+                                        className={"form-control " + (shouldMarkError('username') ? "error" : "")}
+                                        id="username"
+                                        name="username"
+                                        value={this.state.username}
+                                        onChange={this.onChangeHandler}
+                                        onBlur={this.handleBlur('username')}
+                                        aria-describedby="usernameHelp"
+                                        placeholder="Enter username"
+                                    />
                                         {shouldMarkError('username') && <small id="usernameHelp" className="form-text alert alert-danger"> {(!this.state.username ? 'Username is required!' : 'Username should be at least 4 and maximum 16 characters long!')}</small>}
                                     </div>
 
-                                    <div className="form-group">
+                                     <div className="form-group">
                                         <label htmlFor="firstName" >First Name</label>
                                         <input
                                             type="text"
+                                            tabIndex={3}
                                             className={"form-control " + (shouldMarkError('firstName') ? "error" : "")}
                                             id="firstName"
                                             name="firstName"
@@ -161,6 +163,7 @@ class RegisterPage extends Component {
                                         <label htmlFor="address" >Address</label>
                                         <input
                                             type="text"
+                                            tabIndex={5}
                                             className={"form-control " + (shouldMarkError('address') ? "error" : "")}
                                             id="address"
                                             name="address"
@@ -177,6 +180,7 @@ class RegisterPage extends Component {
                                         <label htmlFor="password" >Password</label>
                                         <input
                                             type="password"
+                                            tabIndex={7}
                                             className={"form-control " + (shouldMarkError('password') ? "error" : "")}
                                             id="password"
                                             name="password"
@@ -195,6 +199,7 @@ class RegisterPage extends Component {
                                         <label htmlFor="email" >Email Address</label>
                                         <input
                                             type="email"
+                                            tabIndex={2}
                                             className={"form-control " + (shouldMarkError('email') ? "error" : "")}
                                             id="email"
                                             name="email"
@@ -212,6 +217,7 @@ class RegisterPage extends Component {
                                         <label htmlFor="lastName" >Last Name</label>
                                         <input
                                             type="text"
+                                            tabIndex={4}
                                             className={"form-control " + (shouldMarkError('lastName') ? "error" : "")}
                                             id="lastName"
                                             name="lastName"
@@ -228,6 +234,7 @@ class RegisterPage extends Component {
                                         <label htmlFor="city" >City</label>
                                         <input
                                             type="text"
+                                            tabIndex={6}
                                             className={"form-control " + (shouldMarkError('city') ? "error" : "")}
                                             id="city"
                                             name="city"
@@ -244,6 +251,7 @@ class RegisterPage extends Component {
                                         <label htmlFor="confirmPassword" >Confirm Password</label>
                                         <input
                                             type="password"
+                                            tabIndex={8}
                                             className={"form-control " + (shouldMarkError('confirmPassword') ? "error" : "")}
                                             id="confirmPassword"
                                             name="confirmPassword"
@@ -287,4 +295,3 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(RegisterPage);
-                                                                                                           

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
 import BackButton from './BackButtonWithProps';
-// import socialMedia from '../../assets/images/Social_Media.jpg';
-import socialMedia from '../../assets/images/A-Business-Leaders-Guide-to-Digital-Platforms_Header-0225-1536x638.webp';
+import socialMedia from '../../assets/images/Social_Media.jpg';
 import './css/ErrorPage.css';
 import { userService } from '../../infrastructure'
 

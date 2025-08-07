@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../../styles/FormPages.css';
-import '../../styles/LinkedInLogin.css';
 import { toast } from 'react-toastify';
 import { ToastComponent } from '../common';
 import { connect } from 'react-redux';

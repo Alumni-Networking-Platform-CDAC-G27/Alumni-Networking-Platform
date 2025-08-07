@@ -8,7 +8,7 @@ import { userService } from './infrastructure';
 import { ToastContainer, toast, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css'
 import './styles/App.css';
-import { css } from '@emotion/react';
+import { css } from '@emotion/core';
 import { CircleLoader } from 'react-spinners';
 
 import { connect } from 'react-redux';

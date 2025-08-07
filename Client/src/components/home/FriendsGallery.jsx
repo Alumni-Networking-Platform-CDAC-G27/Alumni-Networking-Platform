@@ -13,7 +13,7 @@ const FriendsGallery = (props) => {
                     </div>
                     <NavLink className="friends " exact to={`/home/friends/${props.timeLineUserId}`}>
                         <h3 className="aside-article-title" style={{ color: ' #333' }}>
-                            Friends &bull; {props.friendsArr.length}
+                            Connections &bull; {props.friendsArr.length}
                         </h3>
                     </NavLink>
                 </div>

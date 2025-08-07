@@ -201,7 +201,7 @@ class UserSearchResultsPage extends Component {
                                 firstButtonLink={`/home/profile/${friend.id}`}
                                 secondButtonLink={`/`}
                                 firstButtonText={'VIEW PROFILE'}
-                                secondButtonText={'ADD FRIEND'}
+                                secondButtonText={'ADD CONNECTION'}
                                 secondButtonOnClick={this.addFriend}
                             />)
                     }

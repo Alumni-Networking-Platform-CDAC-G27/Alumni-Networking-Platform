@@ -188,13 +188,13 @@ class Navbar extends Component {
                     <section className="navbar-section">
                         <div className="navbar-wrapper">
                             <div className="nav-searchbar-container">
-                                <div className="-logo">
+                                <div className="site-logo">
                                     {/* <NavLink to="/" className="nav-link " >Alumni Networking Platform</NavLink> */}
                                   <NavLink to="/" className="nav-link text-center leading-tight">
-  <div>Alumni</div>
-  <div>Networking</div>
-  <div>Platform</div>
-</NavLink>
+                                    <div>Alumni Networking Platform</div>
+                                    {/* <div>Networking</div>
+                                    <div>Platform</div> */}
+                                    </NavLink>
 
                                 </div>
                                 {loggedIn && <form className="form-inline my-2 my-lg-0" onSubmit={this.searchFriend}>
@@ -220,7 +220,7 @@ class Navbar extends Component {
                                     {loggedIn && <li className="nav-item"><NavLink exact to={`/home/profile/${userId}`} className="nav-link  fas fa-user tooltipCustom"  > {userService.getUsername()}<span className="tooltiptextCustom">Profile</span></NavLink></li>}
 
                                     {loggedIn && <li className="nav-item"><NavLink exact to={`/home/comments/${userId}`} className="nav-link ">Home</NavLink></li>}
-                                    {loggedIn && <li className="nav-item"><NavLink exact to={`/home/findFriends/${userId}`} className="nav-link " >Find friends!</NavLink></li>}
+                                    {loggedIn && <li className="nav-item"><NavLink exact to={`/home/findFriends/${userId}`} className="nav-link " >Find Connections!</NavLink></li>}
 
 
                                     {loggedIn &&

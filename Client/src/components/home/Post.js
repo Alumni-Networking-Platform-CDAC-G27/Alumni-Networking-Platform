@@ -11,7 +11,9 @@ const Post = (props) => {
     let isTimeLineUser = (props.timelineUserId === props.currentLoggedInUserId);
 
     const dayTime = props.time.hour <= 12 ? 'AM' : 'PM';
-    const month = props.time.month.substring(0, 1) + props.time.month.substring(1, 5).toLowerCase()
+  const month = props.time && props.time.month
+  ? props.time.month.substring(0, 1) + props.time.month.substring(1, 5).toLowerCase()
+  : '';
     const hour = props.time.hour < 10 ? '0' + props.time.hour : props.time.hour;
     const minute = props.time.minute < 10 ? '0' + props.time.minute : props.time.minute;
 

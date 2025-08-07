@@ -101,10 +101,12 @@ class MessageBox extends Component {
         }
     }
 
-    componentWillUnmount() {
+   componentWillUnmount() {
+    if (this.stompClient && this.stompClient.connected) {
         this.stompClient.disconnect();
-        this._isMounted = false;
     }
+    this._isMounted = false;
+}
 
     getSuccessMessage(prevProps, prevState) {
         if (!this.props.fetchAllChatFriends.hasError && this.props.fetchAllChatFriends.message && this.props.fetchAllChatFriends !== prevProps.fetchAllChatFriends) {

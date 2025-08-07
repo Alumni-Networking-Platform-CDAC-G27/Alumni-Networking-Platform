@@ -193,7 +193,7 @@ main .main-article-shared-content {
 }
 
 .post-user-info {
-    color: rgb(64, 163, 244);
+    color: rgb(64, 211, 244);
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -288,7 +288,7 @@ main .main-article-shared-content {
 
 .like-button i:hover{
     cursor: pointer;
-    color: #40a3f4;
+    color: #f440ee;
     outline:none;
     border: none;
 }

@@ -37,7 +37,7 @@
 }
 
  .main-article-header ul li .active {
-    color: rgb(64, 163, 244);
+    color: rgb(64, 220, 244);
 }
 
  .main-article-header ul .active:after {
@@ -50,7 +50,7 @@
 
  .main-article-header ul li a:hover{
     color: white;
-    background: rgb(64, 163, 244);
+    background: rgb(64, 238, 244);
     border-radius: 5px;
     border: 1px solid white;
     box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.3);
@@ -86,7 +86,7 @@
     }
 
     .main-article-header ul li a:hover{
-        color: rgb(64, 163, 244);
+        color: rgb(64, 181, 244);
         background: white;
         border-radius: none;
         border:none;
